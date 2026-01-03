@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Parking Multiplayer – Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-box">
+
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <h2>Car Parking Multiplayer</h2>
+    <p class="subtitle">Secure Login Portal</p>
+
+    <input id="email" type="email" placeholder="Email">
+
+    <div class="password-wrapper">
+      <input id="password" type="password" placeholder="Password">
+      <span onclick="togglePassword()">Show</span>
+    </div>
+
+    <p id="error" class="error hidden">
+      Please enter a valid email and password.
+    </p>
+
+    <p class="security">Your data is protected.</p>
+
+    <button id="loginBtn" onclick="dergo()">Log in</button>
+
+    <div id="loader" class="loader hidden"></div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
